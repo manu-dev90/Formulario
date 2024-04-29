@@ -10,6 +10,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { __values } from 'tslib';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { TableModule } from 'primeng/table';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     ButtonModule,
     InputTextModule,
     CalendarModule,
-    FormsModule
+    FormsModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,11 +22,45 @@ export class FormularioComponent {
       }
   }
   
-  fecha: Date[];
+
+  fechaInicio: Date[];
+  fechaFin: Date[];
+  lista: any[];
+  nombre: string ;
+  cantidad: number ;
+  descripcion: string;
+
+
   
   constructor()
   {
-    this.fecha = [];
+    this.fechaInicio = [];
+    this.fechaFin = [];
+    this.lista = [];
+    this.nombre = '';
+    this.cantidad = 0;
+    this.descripcion = '';
+  }
+
+  onSubmit() 
+  {
+    this.lista.push(
+      {
+        nombre: this.nombre,
+        cantidad: this.cantidad,
+        descripcion: this.descripcion,
+        fechaInicio: this.fechaInicio,
+        fechaFin: this.fechaFin
+      }
+    );
+
+    this.nombre = '' ;
+    this.cantidad = 0;
+    this.descripcion = '';
+    this.fechaInicio = this.fechaInicio;
+    this.fechaFin = this.fechaFin; 
+  
+  
   }
 
 }
