@@ -1,3 +1,4 @@
+import { NONE_TYPE } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -23,22 +24,22 @@ export class FormularioComponent {
   }
   
 
-  fechaInicio: Date[];
-  fechaFin: Date[];
+  fechaInicio: Date[] | null;
+  fechaFin: Date[] | null;
   lista: any[];
   nombre: string ;
-  cantidad: number ;
+  cantidad: number | null ;
   descripcion: string;
 
 
-  
+
   constructor()
   {
-    this.fechaInicio = [];
-    this.fechaFin = [];
+    this.fechaInicio = null;
+    this.fechaFin = null;
     this.lista = [];
     this.nombre = '';
-    this.cantidad = 0;
+    this.cantidad = null;
     this.descripcion = '';
   }
 
@@ -55,10 +56,10 @@ export class FormularioComponent {
     );
 
     this.nombre = '' ;
-    this.cantidad = 0;
+    this.cantidad = null;
     this.descripcion = '';
-    this.fechaInicio = this.fechaInicio;
-    this.fechaFin = this.fechaFin; 
+    this.fechaInicio = null;
+    this.fechaFin = null; 
   
   
   }

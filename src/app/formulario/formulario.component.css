@@ -1,3 +1,18 @@
 .form-control {
    border-radius: 0%;
 }
+.accordion
+{
+   --bs-accordion-btn-bg: #ededed;
+   --bs-accordion-active-bg: #b3b3b3;
+   --bs-accordion-btn-focus-box-shadow: none;
+}
+.card 
+{
+   border-radius: 0%;
+}
+.btn-secondary
+{
+   --bs-btn-color: #000;
+   --bs-btn-bg: #dee2e6;
+}
