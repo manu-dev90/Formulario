@@ -30,7 +30,8 @@ export class FormularioComponent {
   nombre: string ;
   cantidad: number | null ;
   descripcion: string;
-
+  minDate: Date;
+  maxDate: Date;
 
 
   constructor()
@@ -41,10 +42,23 @@ export class FormularioComponent {
     this.nombre = '';
     this.cantidad = null;
     this.descripcion = '';
+    this.minDate = new Date();
+    this.maxDate = new Date();
+  
+  }
+
+  setMinDate(event: any)
+  {
+    this.maxDate = event
   }
 
   onSubmit() 
   {
+    if(!this.verificarFormulario()) {
+      alert("Por favor, rellene todos los campos");
+      return;
+    }
+
     this.lista.push(
       {
         nombre: this.nombre,
@@ -60,8 +74,13 @@ export class FormularioComponent {
     this.descripcion = '';
     this.fechaInicio = null;
     this.fechaFin = null; 
-  
-  
+
   }
+   verificarFormulario(): boolean {
+    return this.nombre.trim() !== '' &&
+            this.cantidad !== null &&
+              this.descripcion.trim() !== '' &&
+                this.fechaInicio !== null && this.fechaFin !== null;
+   }
 
 }
