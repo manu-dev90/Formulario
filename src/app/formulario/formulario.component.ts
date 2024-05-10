@@ -1,5 +1,6 @@
+import { getLocaleDayNames, getLocaleFirstDayOfWeek } from '@angular/common';
 import { NONE_TYPE } from '@angular/compiler';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-formulario',
@@ -23,7 +24,7 @@ export class FormularioComponent {
       }
   }
   
-
+  
   fechaInicio: Date[] | null;
   fechaFin: Date[] | null;
   lista: any[];
@@ -32,6 +33,7 @@ export class FormularioComponent {
   descripcion: string;
   minDate: Date;
   maxDate: Date;
+  es: any;
 
 
   constructor()
@@ -54,6 +56,7 @@ export class FormularioComponent {
 
   onSubmit() 
   {
+
     if(!this.verificarFormulario()) {
       alert("Por favor, rellene todos los campos");
       return;
