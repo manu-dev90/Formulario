@@ -27,7 +27,3 @@
    --bs-btn-color: #000;
    --bs-btn-bg: #dee2e6;
 }
-.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header
-{
-    background-color: lightseagreen;
-}
