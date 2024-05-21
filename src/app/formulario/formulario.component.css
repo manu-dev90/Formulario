@@ -18,6 +18,10 @@
    --bs-accordion-active-bg: #b3b3b3;
    --bs-accordion-btn-focus-box-shadow: none;
 }
+.accordion-item
+{
+   background-color: #dbdbdb;
+}
 .card 
 {
    border-radius: 0%;
@@ -26,4 +30,23 @@
 {
    --bs-btn-color: #000;
    --bs-btn-bg: #dee2e6;
+}
+::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
+   background: lightseagreen;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year 
+{
+   color: white;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month 
+{
+   color: white;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-prev, .p-datepicker .p-datepicker-header .p-datepicker-next 
+{
+   color: white;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-next, .p-datepicker .p-datepicker-header .p-datepicker-prev 
+{
+   color: white;
 }

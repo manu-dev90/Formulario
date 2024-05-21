@@ -5,6 +5,18 @@
 .p-calendar .p-datepicker
 {
    color: lightseagreen;
-   top: 56px;
+   top: 50px;
    z-index: 1000;
+   left: -60px;
+   width: 320px;
+  
 } 
+.p-component .p-component *
+{
+   display: inline-table;
+}
+
+.p-datepicker table
+{
+   table-layout: fixed;
+}

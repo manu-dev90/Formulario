@@ -34,9 +34,9 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppModule { 
 
-  constructor (private primengConfig: PrimeNGConfig) 
+  constructor (private primengConfigEs: PrimeNGConfig) 
   {
-    this.primengConfig.setTranslation(
+    this.primengConfigEs.setTranslation(
       {
         dayNames: ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"],
         dayNamesShort: ["lun","mar","mie","jue","vie","sab","dom"],

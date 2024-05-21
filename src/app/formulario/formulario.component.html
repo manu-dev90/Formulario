@@ -85,9 +85,11 @@
                     <p-calendar
                       [(ngModel)]="fechaInicio"
                       appendTo="accordion"
+                      placeholder="Fecha de Inicio"
                       (onSelect)="setMinDate($event)"
                       [showTime]="true"
                       dateFormat="dd/mm/yy"
+                      
                     ></p-calendar>
                   </div>
                 </div>
@@ -101,6 +103,7 @@
                   <p-calendar
                     [(ngModel)]="fechaFin"
                     appendTo="accordion"
+                    placeholder="Fecha de Fin"
                     [showTime]="true"
                     dateFormat="dd/mm/yy"
                     [minDate]="maxDate"
