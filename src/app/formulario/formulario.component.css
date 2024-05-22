@@ -15,7 +15,6 @@
   --bs-accordion-active-bg: #b3b3b3;
   --bs-accordion-btn-focus-box-shadow: none;
 }
-<<<<<<< HEAD
 .accordion-item
 {
    background-color: #dbdbdb;
@@ -23,10 +22,10 @@
 .card 
 {
    border-radius: 0%;
-=======
-.card {
+  }
+.card 
+{
   border-radius: 0%;
->>>>>>> 93ea9364034664546353d1a5d5c851487dd5b35e
 }
 .btn-secondary {
   --bs-btn-color: #000;
