@@ -79,6 +79,7 @@
 ::ng-deep .p-calendar .p-datepicker
 {
   height: 370px;
+  display: inline-table;
 }
 ::ng-deep .p-datepicker .p-timepicker
 {
