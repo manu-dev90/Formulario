@@ -62,3 +62,34 @@
 {
    color: white;
 }
+::ng-deep .p-datepicker table td {
+  padding: 0.3rem ;
+}
+::ng-deep .p-datepicker table td > span {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+::ng-deep .p-datepicker table {
+  font-size: 11pt;
+  margin: -0.170rem 0;
+}
+::ng-deep .p-datepicker .p-datepicker-header {
+  padding: 0.2rem;
+}
+::ng-deep .p-calendar .p-datepicker
+{
+  height: 370px;
+}
+::ng-deep .p-datepicker .p-timepicker
+{
+  border-top: 1px solid;
+  padding: initial;
+  font: -webkit-small-control;
+  margin: 0.3em;
+}
+::ng-deep .p-datepicker .p-timepicker span {
+  font-size: 1.1rem;
+}
+::ng-deep .p-datepicker .p-timepicker button:last-child {
+  margin-top: -0.20em;
+}

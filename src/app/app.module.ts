@@ -38,11 +38,14 @@ export class AppModule {
   {
     this.primengConfigEs.setTranslation(
       {
-        dayNames: ["lunes","martes","miercoles","jueves","viernes","sabado","domingo"],
-        dayNamesShort: ["lun","mar","mie","jue","vie","sab","dom"],
-        dayNamesMin: ["L","M","X","J","V","S","D"],
+        dayNames: ["domingo","lunes","martes","miercoles","jueves","viernes","sabado"],
+        dayNamesShort: ["dom","lun","mar","mie","jue","vie","sab"],
+        dayNamesMin: ["D","L","M","X","J","V","S"],
         monthNames: ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
         monthNamesShort: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
+        today: 'Hoy',
+        clear: 'Limpiar',
+        firstDayOfWeek: 1,
       }
     );
   }
