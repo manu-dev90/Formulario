@@ -31,16 +31,13 @@
   --bs-btn-color: #000;
   --bs-btn-bg: #dee2e6;
 }
-
-::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
+::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header 
+{
   background: red;
 }
 
-::ng-deep
-  .p-datepicker:not(.p-disabled)
-  table
-  td
-  span:not(.p-highlight):not(.p-disabled):hover {
+::ng-deep .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover 
+{
   background: blue;
 }
 ::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
@@ -80,6 +77,7 @@
 {
   height: 370px;
   display: inline-table;
+  border: solid;
 }
 ::ng-deep .p-datepicker .p-timepicker
 {
@@ -88,9 +86,11 @@
   font: -webkit-small-control;
   margin: 0.3em;
 }
-::ng-deep .p-datepicker .p-timepicker span {
+::ng-deep .p-datepicker .p-timepicker span 
+{
   font-size: 1.1rem;
 }
-::ng-deep .p-datepicker .p-timepicker button:last-child {
+::ng-deep .p-datepicker .p-timepicker button:last-child 
+{
   margin-top: -0.20em;
 }
