@@ -1,0 +1,18 @@
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.p-calendar .p-datepicker {
+  color: #1c7877;
+  top: 50px;
+  z-index: 1000;
+  left: -80px;
+  width: 350px;
+}
+.p-component .p-component * {
+  display: inline-table;
+}
+
+.p-datepicker table {
+  table-layout: fixed;
+}

@@ -38,10 +38,10 @@
 
 ::ng-deep .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover 
 {
-  background: blue;
+  background: #0dcaf0;
 }
 ::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
-   background: lightseagreen;
+   background: #1c7778 15%;
 }
 ::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year 
 {
@@ -77,7 +77,7 @@
 {
   height: 370px;
   display: inline-table;
-  border: solid;
+  border-radius: inherit;
 }
 ::ng-deep .p-datepicker .p-timepicker
 {
@@ -93,4 +93,12 @@
 ::ng-deep .p-datepicker .p-timepicker button:last-child 
 {
   margin-top: -0.20em;
+}::ng-deep .p-datepicker .p-timepicker button
+{
+  color: blue;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title 
+{
+  padding: 10px;
+  white-space-collapse: preserve;
 }

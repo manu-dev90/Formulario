@@ -1,0 +1,41 @@
+  <!--Fecha inicio-->
+  <div class="container text-center">
+    <div class="row justify-content-center row-cols-lg-5">
+      <div class="col-5">
+        <div class="p-3">
+          <div class="card flex justify-content-center">
+            <div class="p-datepicker-header ng-tns-c12-0">
+              <p-calendar
+                [(ngModel)]="fechaInicio"
+                appendTo="accordion"
+                placeholder="Data d'inici"
+                (onSelect)="setMinDateInicio($event)"
+                [minDate]="minDateInicio"
+                [maxDate]="maxDateInicio"
+                [showTime]="true"
+                dateFormat="dd/mm/yy"
+              ></p-calendar>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Fecha fin-->
+      <div class="col-5">
+        <div class="p-3">
+          <div class="card flex justify-content-center">
+            <p-calendar
+              [(ngModel)]="fechaFin"
+              appendTo="accordion"
+              placeholder="Data de fi"
+              [showTime]="true"
+              dateFormat="dd/mm/yy"
+              (onSelect)="setMinDateFin($event)"
+              [minDate]="minDateFin"
+              [maxDate]="maxDateFin"
+              [readonlyInput]="true"
+            ></p-calendar>
+          </div>
+        </div>
+      </div>
+    </div>

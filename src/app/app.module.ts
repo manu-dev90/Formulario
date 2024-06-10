@@ -13,11 +13,13 @@ import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 
 import { PrimeNGConfig } from 'primeng/api';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,11 +40,11 @@ export class AppModule {
   {
     this.primengConfigEs.setTranslation(
       {
-        dayNames: ["domingo","lunes","martes","miercoles","jueves","viernes","sabado"],
-        dayNamesShort: ["dom","lun","mar","mie","jue","vie","sab"],
-        dayNamesMin: ["D","L","M","X","J","V","S"],
-        monthNames: ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"],
-        monthNamesShort: ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"],
+        dayNames: ["diumenge","dilluns","dimarts","dimecres","dijous","divendres","dissabte"],
+        dayNamesShort: ["diu","dil","dim","dix","dij","div","dis"],
+        dayNamesMin: ["diu.","dil.","dim.","dix.","dij.","div.","dis."],
+        monthNames: ["Gener","Febrer","Març","Abril","Maig","Juny","Juliol","Agost","Setembre","Octubre","Novembre","Desembre"],
+        monthNamesShort: ["Gen","Feb","Mar","Abr","Mai","Jun","Jul","Ago","Set","Oct","Nov","Des"],
         today: 'Hoy',
         clear: 'Limpiar',
         firstDayOfWeek: 1,

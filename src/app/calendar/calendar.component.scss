@@ -1,0 +1,75 @@
+::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header 
+{
+  background: red;
+}
+
+::ng-deep .p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover 
+{
+  background: #0dcaf0;
+}
+::ng-deep .p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
+   background: #1c7778 15%;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year 
+{
+   color: white;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month 
+{
+   color: white;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-prev, .p-datepicker .p-datepicker-header .p-datepicker-next 
+{
+   color: white;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-next, .p-datepicker .p-datepicker-header .p-datepicker-prev 
+{
+   color: white;
+}
+::ng-deep .p-datepicker table td {
+  padding: 0.3rem ;
+}
+::ng-deep .p-datepicker table td > span {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+::ng-deep .p-datepicker table {
+  font-size: 11pt;
+  margin: -0.170rem 0;
+}
+::ng-deep .p-datepicker .p-datepicker-header {
+  padding: 0.2rem;
+}
+::ng-deep .p-calendar .p-datepicker
+{
+  height: 370px;
+  display: inline-table;
+  border-radius: inherit;
+}
+::ng-deep .p-datepicker .p-timepicker
+{
+  border-top: 1px solid;
+  padding: initial;
+  font: -webkit-small-control;
+  margin: 0.3em;
+}
+::ng-deep .p-datepicker .p-timepicker span 
+{
+  font-size: 1.1rem;
+}
+::ng-deep .p-datepicker .p-timepicker button:last-child 
+{
+  margin-top: -0.20em;
+}::ng-deep .p-datepicker .p-timepicker button
+{
+  color: blue;
+}
+::ng-deep .p-datepicker .p-datepicker-header .p-datepicker-title 
+{
+  padding: 10px;
+  white-space-collapse: preserve;
+}
+.card 
+{
+  border-radius: 0%;
+}
