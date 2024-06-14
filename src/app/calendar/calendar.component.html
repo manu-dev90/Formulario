@@ -7,13 +7,16 @@
             <div class="p-datepicker-header ng-tns-c12-0">
               <p-calendar
                 [(ngModel)]="fechaInicio"
-                appendTo="accordion"
+                appendTo="body"
                 placeholder="Data d'inici"
                 (onSelect)="setMinDateInicio($event)"
                 [minDate]="minDateInicio"
                 [maxDate]="maxDateInicio"
                 [showTime]="true"
                 dateFormat="dd/mm/yy"
+                [readonlyInput]="false"
+                (onBlur)="validateInput('fechaInicio')"
+              (keypress)="restrictInputLength($event, 16)"
               ></p-calendar>
             </div>
           </div>
@@ -26,16 +29,23 @@
           <div class="card flex justify-content-center">
             <p-calendar
               [(ngModel)]="fechaFin"
-              appendTo="accordion"
+              appendTo="body"
               placeholder="Data de fi"
               [showTime]="true"
               dateFormat="dd/mm/yy"
               (onSelect)="setMinDateFin($event)"
               [minDate]="minDateFin"
               [maxDate]="maxDateFin"
-              [readonlyInput]="true"
+              [readonlyInput]="false"
+              (onBlur)="validateInput('fechaFin')"
+              (keypress)="restrictInputLength($event, 16)"
             ></p-calendar>
           </div>
         </div>
       </div>
+    </div>
+
+    <!--Boton Traductor-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <button class="btn btn-primary me-md-2" type="button" (click)="botonTraducir()">{{buttonLabel}}</button>
     </div>
