@@ -5,18 +5,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-import { __values } from 'tslib';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { CalendarComponent } from './calendar/calendar.component';
+import { FechaInicioComponent } from './fecha-inicio/fecha-inicio.component';
+import { FechaFinComponent } from './fecha-fin/fecha-fin.component';
+import { TraductorComponent } from './traductor/traductor.component';
 
 @NgModule({
-  declarations: [
+ declarations: [
     AppComponent,
     CalendarComponent,
+    FechaInicioComponent,
+    FechaFinComponent,
+    TraductorComponent,
   ],
-  imports: [
+ imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -26,9 +31,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     FormsModule,
     TableModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+ providers: [],
+ bootstrap: [AppComponent]
 })
-export class AppModule { 
-
-}
+export class AppModule { }
