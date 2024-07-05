@@ -1,9 +1,11 @@
 <div class="p-3">
     <div class="card flex justify-content-center">
+      <span class="p-float-label">
       <p-calendar
         [(ngModel)]="fechaFin"
+        class="custom-calendar"
         appendTo="body"
-        placeholder="Data de fi"
+        placeholder=""
         [showTime]="true"
         dateFormat="dd/mm/yy"
         (onSelect)="setMinDateFin($event)"
@@ -13,5 +15,7 @@
         (onBlur)="validateInput('fechaFin')"
         (keypress)="restrictInputLength($event, 16)"
       ></p-calendar>
+          <label htmlFor="fechaFin">Data de fi</label>
+      </span>
     </div>
   </div>

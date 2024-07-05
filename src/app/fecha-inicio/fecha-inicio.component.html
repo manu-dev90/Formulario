@@ -1,10 +1,11 @@
 <div class="p-3">
     <div class="card flex justify-content-center">
-      <div class="p-datepicker-header ng-tns-c12-0">
+      <span class="p-float-label">
         <p-calendar
           [(ngModel)]="fechaInicio"
+          class="custom-calendar"
           appendTo="body"
-          placeholder="Data d'inici"
+          placeholder=""
           (onSelect)="setMinDateInicio($event)"
           [minDate]="minDateInicio"
           [maxDate]="maxDateInicio"
@@ -14,6 +15,8 @@
           (onBlur)="validateInput('fechaInicio')"
         (keypress)="restrictInputLength($event, 16)"
         ></p-calendar>
+          <label htmlFor="fechaInicio">Data d'inici</label>
+        </span>
       </div>
     </div>
-  </div>
+ 
