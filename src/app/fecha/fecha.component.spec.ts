@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FechaFinComponent } from './fecha-fin.component';
+import { FechaComponent } from './fecha.component';
 
-describe('FechaFinComponent', () => {
-  let component: FechaFinComponent;
-  let fixture: ComponentFixture<FechaFinComponent>;
+describe('FechaComponent', () => {
+  let component: FechaComponent;
+  let fixture: ComponentFixture<FechaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FechaFinComponent ]
+      declarations: [ FechaComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FechaFinComponent);
+    fixture = TestBed.createComponent(FechaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,17 +4,15 @@
       <div class="col-5">
         <div class="p-3">
           <div class="card flex justify-content-center">
-            <div class="p-datepicker-header ng-tns-c12-0">
-              <app-fecha-inicio
-                [fechaInicio]="fechaInicio"
-                [minDateInicio]="minDateInicio"
-                [maxDateInicio]="maxDateInicio"
-                [minDateFin]="minDateFin"
-                [fechaFin]="fechaFin"
-                (fechaInicioChange)="fechaInicio = $event"
-                (minDateFinChange)="minDateFin = $event"
-              ></app-fecha-inicio>
-            </div>
+              <app-fecha
+              [fecha]="fechaInicio"
+              [minDate]="minDateInicio"
+              [maxDate]="maxDateInicio"
+              [relatedDate]="minDateFin"
+              [calendarType]="'startDate'"
+              (fechaChange)="fechaInicio = $event"
+              (relatedDateChange)="updateMinDateFin($event)"
+              ></app-fecha>
           </div>
         </div>
       </div>
@@ -23,15 +21,15 @@
       <div class="col-5">
         <div class="p-3">
           <div class="card flex justify-content-center">
-            <app-fecha-fin
-              [fechaFin]="fechaFin"
-              [minDateFin]="minDateFin"
-              [maxDateFin]="maxDateFin"
-              [maxDateInicio]="maxDateInicio"
-              [fechaInicio]="fechaInicio"
-              (fechaFinChange)="fechaFin = $event"
-              (maxDateInicioChange)="maxDateInicio = $event"
-            ></app-fecha-fin>
+            <app-fecha
+            [fecha]="fechaFin"
+            [minDate]="minDateFin"
+            [maxDate]="maxDateFin"
+            [relatedDate]="minDateInicio"
+            [calendarType]="'endDate'"
+            (fechaChange)="fechaFin = $event"
+            (relatedDateChange)="updateMaxDateInicio($event)"
+            ></app-fecha>
           </div>
         </div>
       </div>

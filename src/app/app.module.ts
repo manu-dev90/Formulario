@@ -9,17 +9,16 @@ import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
 import { CalendarComponent } from './calendar/calendar.component';
-import { FechaInicioComponent } from './fecha-inicio/fecha-inicio.component';
-import { FechaFinComponent } from './fecha-fin/fecha-fin.component';
 import { TraductorComponent } from './traductor/traductor.component';
+import { FechaComponent } from './fecha/fecha.component';
+
 
 @NgModule({
  declarations: [
     AppComponent,
     CalendarComponent,
-    FechaInicioComponent,
-    FechaFinComponent,
     TraductorComponent,
+    FechaComponent,
   ],
  imports: [
     BrowserModule,
