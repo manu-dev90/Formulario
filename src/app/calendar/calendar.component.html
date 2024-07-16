@@ -48,3 +48,51 @@
       </app-traductor>
     </div>
   </div>
+
+  <div class="espaciador"></div>
+
+  <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Enlace</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{ item.id }}</td>
+          <td>{{ item.nombre }}</td>
+          <td><a [href]="item.enlace" target="_blank">{{ item.enlace }}</a></td>
+          <td>
+            <button (click)="PreviewInvoice(item.enlace, item.nombre)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Abrir PDF
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Vista Previa del Documento</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ngx-extended-pdf-viewer 
+              [src]="pdfurl" 
+              [useBrowserLocale]="true" 
+              [filenameForDownload]="pdfName"
+              height="600px">
+            </ngx-extended-pdf-viewer>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    

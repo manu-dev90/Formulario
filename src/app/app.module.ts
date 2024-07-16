@@ -11,6 +11,7 @@ import { TableModule } from 'primeng/table';
 import { CalendarComponent } from './calendar/calendar.component';
 import { TraductorComponent } from './traductor/traductor.component';
 import { FechaComponent } from './fecha/fecha.component';
+import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FechaComponent } from './fecha/fecha.component';
     InputTextModule,
     CalendarModule,
     FormsModule,
-    TableModule
+    TableModule,
+    NgxExtendedPdfViewerModule
   ],
  providers: [],
  bootstrap: [AppComponent]

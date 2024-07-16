@@ -14,7 +14,11 @@ export class CalendarComponent
   maxDateInicio: Date = new Date(3000, 11, 31);
   minDateFin: Date = new Date(1900, 0, 1);
   maxDateFin: Date = new Date(3000, 11, 31);
-  es: any = 
+  
+  pdfurl = '';
+  pdfName = 'formulario.pdf';
+
+es: any = 
   {
     dayNames: ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],
     dayNamesShort: ["dom","lun","mar","mié","jue","vie","sáb"],
@@ -53,4 +57,16 @@ export class CalendarComponent
  {
     this.maxDateInicio = date ? date : new Date(3000, 11 ,31);
  }
+
+   items = 
+   [
+    { id: 1, nombre: 'Seguridad', enlace: 'assets/seguridad.pdf' },
+    { id: 2, nombre: 'Emergencia', enlace: 'assets/emergencia.pdf' },
+   ];
+
+PreviewInvoice(enlace: string, nombre:string): void 
+  {
+   this.pdfurl = (enlace);
+   this.pdfName = nombre + '.pdf';
+  }
 }
